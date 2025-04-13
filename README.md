@@ -53,3 +53,7 @@ O curso é dividido em módulos práticos e teóricos que abrangem os seguintes 
 - JDBC
 - PostgreSQL / MySQL
 - Git
+
+#
+
+Feito com ❤️ por Gustavo Farias em 2025.
