@@ -13,7 +13,7 @@ public class Principal {
         meuCarro.proprietario.cpf = "123.456.789-00";
         meuCarro.proprietario.anoNascimento = 1990;
 
-        meuCarro.calcularValorRevenda();
+        meuCarro.imprimirResumoDepreciacao();
 
         System.out.println("Ano: " + meuCarro.anoFabricacao);
         System.out.println("Modelo: " + meuCarro.modelo);

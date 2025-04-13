@@ -6,8 +6,12 @@ public class Carro {
     double precoCompra;
     Pessoa proprietario;
 
-    void calcularValorRevenda() {
-        int tempoDeUsoEmAnos = 2025 - anoFabricacao;
+    int calcularTempoDeUsoEmAno() {
+        return 2025 - anoFabricacao;
+    }
+
+    double calcularValorRevenda() {
+        int tempoDeUsoEmAnos = calcularTempoDeUsoEmAno();
         int vidaUtilEmAnos = 20;
         double valorRevenda = (precoCompra / vidaUtilEmAnos) * (vidaUtilEmAnos - tempoDeUsoEmAnos);
 
@@ -15,8 +19,15 @@ public class Carro {
             valorRevenda = 0;
         }
 
+        return valorRevenda;
+    }
+
+    void imprimirResumoDepreciacao() {
+        double valorRevenda = calcularValorRevenda();
+        int tempoDeUsoMeuCarro = calcularTempoDeUsoEmAno();
+
         System.out.printf(
-            "Tempo de uso (anos): %d%n", tempoDeUsoEmAnos
+            "Tempo de uso (anos): %d%n", tempoDeUsoMeuCarro 
         );
 
         System.out.printf(
