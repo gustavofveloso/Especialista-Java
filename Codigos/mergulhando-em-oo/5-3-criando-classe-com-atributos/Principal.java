@@ -6,11 +6,19 @@ public class Principal {
         meuCarro.modelo = "Fusca";
         meuCarro.cor = "azul";
         meuCarro.fabricante = "Volkswagen";
+        
+        meuCarro.proprietario = new Pessoa();
+        meuCarro.proprietario.nome = "Gustavo Farias";
+        meuCarro.proprietario.cpf = "123.456.789-00";
+        meuCarro.proprietario.anoNascimento = 1990;
 
         System.out.println("Ano: " + meuCarro.anoFabricacao);
         System.out.println("Modelo: " + meuCarro.modelo);
         System.out.println("Cor: " + meuCarro.cor);
         System.out.println("Fabricante: " + meuCarro.fabricante);
+        System.out.println("Proprietario: " + meuCarro.proprietario.nome);
+        System.out.println("CPF: " + meuCarro.proprietario.cpf);
+        System.out.println("Ano de Nascimento: " + meuCarro.proprietario.anoNascimento);
 
         System.out.println();
 

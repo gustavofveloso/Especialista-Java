@@ -3,8 +3,5 @@ public class Carro {
     String modelo;
     String cor;
     int anoFabricacao;
-
-    public Carro() {
-        
-    }
+    Pessoa proprietario;
 }
