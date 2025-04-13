@@ -12,6 +12,18 @@ public class Principal {
         System.out.println("Cor: " + meuCarro.cor);
         System.out.println("Fabricante: " + meuCarro.fabricante);
 
+        System.out.println();
+
         Carro seuCarro = new Carro();
+
+        seuCarro.anoFabricacao = 2024;
+        seuCarro.modelo = "X6";
+        seuCarro.cor = "prata";
+        seuCarro.fabricante = "BMW";
+
+        System.out.println("Ano: " + seuCarro.anoFabricacao);
+        System.out.println("Modelo: " + seuCarro.modelo);
+        System.out.println("Cor: " + seuCarro.cor);
+        System.out.println("Fabricante: " + seuCarro.fabricante);
     }
 }
