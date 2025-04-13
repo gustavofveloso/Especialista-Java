@@ -22,6 +22,10 @@ public class Carro {
         return valorRevenda;
     }
 
+    double calcularIpva() {
+        return calcularValorRevenda() * 0.04;
+    }
+
     void imprimirResumoDepreciacao() {
         double valorRevenda = calcularValorRevenda();
         int tempoDeUsoMeuCarro = calcularTempoDeUsoEmAno();
